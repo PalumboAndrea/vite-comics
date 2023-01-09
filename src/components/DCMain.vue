@@ -1,10 +1,15 @@
 <template>
-    <div id="content-container" class="container-fluid">
+    <div id="content-container" class="container-fluid remove-padding">
+        <div class="container">
+        --> Content goes here
+        </div>
+    </div>
+
+    <div id="banner" class="container-fluid remove-padding">
         
     </div>
-    <div id="banner">
-
-    </div>
+    
+    
 </template>
 
 <style lang="scss">
@@ -12,6 +17,9 @@
         background-color: rgb(28,28,28);
         width: 100%;
         height: 150px;
+        color: white;
+        display: flex;
+        align-items: center;
     }
 
     #banner{

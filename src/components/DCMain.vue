@@ -1,9 +1,9 @@
 <template>
-    <div id="content-container">
+    <div id="content-container" class="container-fluid">
         
     </div>
     <div id="banner">
-        
+
     </div>
 </template>
 

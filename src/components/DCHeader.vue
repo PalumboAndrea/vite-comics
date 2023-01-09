@@ -1,5 +1,5 @@
 <template>
-    <div id="footer-container" class="container-fluid">
+    <div id="header-container" class="container-fluid">
         <div class="logo">
 
         </div>
@@ -42,8 +42,7 @@
 </template>
 
 <style lang="scss">
-    #footer-container{
-       
+    #header-container{
         height: 150px;
         background-color: white;
         display: flex;
@@ -56,7 +55,6 @@
         }
 
         ul{
-            list-style-type: none;
             padding: 0;
             display: flex;
             flex-direction: row;

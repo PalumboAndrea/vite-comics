@@ -10,13 +10,10 @@ import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { faPinterest } from '@fortawesome/free-brands-svg-icons'
-import { faGoogleDrive } from '@fortawesome/free-brands-svg-icons'
-
-/* import specific icons */
-import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
+import { faPeriscope } from '@fortawesome/free-brands-svg-icons'
 
 /* add icons to the library */
-library.add(faUserSecret, faFacebook, faTwitter, faYoutube, faPinterest, faGoogleDrive)
+library.add(faFacebook, faTwitter, faYoutube, faPinterest, faPeriscope)
 
 createApp(App)
 .component('font-awesome-icon', FontAwesomeIcon)

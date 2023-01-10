@@ -1,3 +1,49 @@
+<script>
+
+export default {
+    data() {
+        return {
+            headerMenuItems: [
+                {
+                    name: 'characters',
+                },
+                {
+                    name: 'movies',
+                },
+                {
+                    name: 'comics',
+                },
+                {
+                    name: 'movies',
+                },
+                {
+                    name: 'tv',
+                },
+                {
+                    name: 'games',
+                },
+                {
+                    name: 'collectibles',
+                },
+                {
+                    name: 'videos',
+                },
+                {
+                    name: 'fans',
+                },
+                {
+                    name: 'news',
+                },
+                {
+                    name: 'shop',
+                }
+            ],
+            
+        }
+    },
+}
+</script>
+
 <template>
     <div id="header-container" class="container">
         
@@ -59,46 +105,4 @@
     }
 </style>
 
-<script>
-export default {
-    data() {
-        return {
-            headerMenuItems: [
-                {
-                    name: 'characters',
-                },
-                {
-                    name: 'movies',
-                },
-                {
-                    name: 'comics',
-                },
-                {
-                    name: 'movies',
-                },
-                {
-                    name: 'tv',
-                },
-                {
-                    name: 'games',
-                },
-                {
-                    name: 'collectibles',
-                },
-                {
-                    name: 'videos',
-                },
-                {
-                    name: 'fans',
-                },
-                {
-                    name: 'news',
-                },
-                {
-                    name: 'shop',
-                }
-            ]
-        }
-    },
-}
-</script>
+

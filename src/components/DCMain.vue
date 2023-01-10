@@ -43,15 +43,24 @@ export default {
 <template>
     <div id="content-container" class="container-fluid remove-padding">
 
-        
+        <div id="jumbo">
 
-        <div class="container">
-        <DCCardsElement v-for="element in myJson"
-        :imagePath="element.thumb"
-        :elementPrice="element.price"
-        :elSeries="element.series"
-        :elType="element.type"/>
-        
+            <div id="current-series" href="#">
+                current series
+            </div>
+            
+        </div>
+
+        <div class="container d-flex justify-content-center flex-wrap px-0 pt-5 pb-4">
+            <DCCardsElement v-for="element in myJson"
+            :imagePath="element.thumb"
+            :elementPrice="element.price"
+            :elSeries="element.series"
+            :elType="element.type"/>
+            
+            <button class="load-more" href="#">
+                load more
+            </button>
         </div>
     </div>
 
@@ -68,23 +77,47 @@ export default {
     
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @use '../styles/partials/variable' as *;
 
     #content-container{
         background-color: rgb(28,28,28);
         width: 100%;
-        padding: 40px;
         color: white;
-        display: flex;
-        align-items: center;
+        
+        #jumbo{
+            height: 400px;
+            width: 100%;
+            background-image: url(../assets/img/jumbo.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative;
 
-        .container{
-            display: flex;
-            flex-wrap: wrap;
-
-            
+            #current-series{
+                background-color: rgb(1,130,249);
+                color: white;
+                border: 0;
+                text-transform: uppercase;
+                padding: 8px 30px;
+                font-weight: 700;
+                font-size: 1.8rem;
+                position: absolute;
+                height: 3.6rem;
+                left: 10%;
+                bottom: -1.8rem;
+            }
         }
+
+        .load-more{
+            background-color: rgb(1,130,249);
+            color: white;
+            border: 0;
+            text-transform: uppercase;
+            padding: 8px 70px;
+            font-weight: 700;
+        }
+        
     }
 
     #banner{
@@ -94,7 +127,6 @@ export default {
         display: flex;
         align-items: center;
         justify-content: center;
-        
 
         ul{
             display: flex;

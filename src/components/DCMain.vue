@@ -42,13 +42,15 @@ export default {
 
 <template>
     <div id="content-container" class="container-fluid remove-padding">
+
+        
+
         <div class="container">
         <DCCardsElement v-for="element in myJson"
         :imagePath="element.thumb"
         :elementPrice="element.price"
         :elSeries="element.series"
-        :elType="element.type"
-        />
+        :elType="element.type"/>
         
         </div>
     </div>
@@ -81,10 +83,7 @@ export default {
             display: flex;
             flex-wrap: wrap;
 
-            .my-container{
-                width: calc((100% / 6) - 4px);
-                margin: 2px;
-            }
+            
         }
     }
 

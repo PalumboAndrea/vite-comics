@@ -20,9 +20,8 @@ import DCMain from './components/DCMain.vue';
 </template>
 
 <style lang="scss">
-
-@use './styles/partials/variable';
-@use './bootstrap/scss/bootstrap.scss';
-@use './styles/general';
+@use './bootstrap/scss/bootstrap.scss'  as *;
+@use './styles/general'  as *;
+@use './styles/partials/variable' as *;
 
 </style>

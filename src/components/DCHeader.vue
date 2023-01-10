@@ -5,45 +5,19 @@
 
         <div class="navbar">
             <ul>
-                <li>
-                    characters
-                </li>
-                <li>
-                    comics
-                </li>
-                <li>
-                    movies
-                </li>
-                <li>
-                    tv
-                </li>
-                <li>
-                    games
-                </li>
-                <li>
-                    collectibles
-                </li>
-                <li>
-                    videos
-                </li>
-                <li>
-                    fans
-                </li>
-                <li>
-                    news
-                </li>
-                <li>
-                    shop
+                <li v-for="headerMenuItem in headerMenuItems">
+                    {{headerMenuItem.name}}
                 </li>
             </ul>
-            
         </div>
     </div>
 </template>
 
 <style lang="scss">
+@use '../styles/partials/variable' as *;
+
     #header-container{
-        height: 120px;
+        height: $header-height;
         background-color: white;
         display: flex;
         justify-content: space-between;
@@ -87,6 +61,44 @@
 
 <script>
 export default {
-    
+    data() {
+        return {
+            headerMenuItems: [
+                {
+                    name: 'characters',
+                },
+                {
+                    name: 'movies',
+                },
+                {
+                    name: 'comics',
+                },
+                {
+                    name: 'movies',
+                },
+                {
+                    name: 'tv',
+                },
+                {
+                    name: 'games',
+                },
+                {
+                    name: 'collectibles',
+                },
+                {
+                    name: 'videos',
+                },
+                {
+                    name: 'fans',
+                },
+                {
+                    name: 'news',
+                },
+                {
+                    name: 'shop',
+                }
+            ]
+        }
+    },
 }
 </script>

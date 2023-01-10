@@ -19,6 +19,8 @@
 </template>
 
 <style lang="scss">
+@use '../styles/partials/variable' as *;
+
     #content-container{
         background-color: rgb(28,28,28);
         width: 100%;
@@ -31,7 +33,7 @@
     #banner{
         height: 160px;
         width: 100%;
-        background-color: rgb(1,130,249);
+        background-color: $banner-color;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -55,9 +57,6 @@
             }
         }
     }
-
-
-
 </style>
 
 <script>

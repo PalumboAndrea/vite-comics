@@ -131,7 +131,6 @@
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
-       
 
         #upper-footer{
             height: 80%;

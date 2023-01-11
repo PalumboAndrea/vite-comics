@@ -44,11 +44,9 @@ export default {
     <div id="content-container" class="container-fluid remove-padding">
 
         <div id="jumbo">
-
             <div id="current-series" href="#">
                 current series
             </div>
-            
         </div>
 
         <div class="container d-flex justify-content-center flex-wrap px-0 pt-5 pb-4">
@@ -62,6 +60,7 @@ export default {
                 load more
             </button>
         </div>
+        
     </div>
 
     <div id="banner" class="container-fluid">

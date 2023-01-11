@@ -37,7 +37,6 @@ export default {
         text-align: center;
         width: calc((100% / 6) - 20px);
         margin-right: 20px;
-        
 
         .img-container{
             position: relative;
